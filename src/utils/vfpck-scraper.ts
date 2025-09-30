@@ -3,7 +3,7 @@ import * as cheerio from "cheerio";
 import fs from "node:fs";
 import path from "node:path";
 
-const DATA_DIR = path.join(__dirname, "/../../", "data");
+export const DATA_DIR = path.join(__dirname, "/../", "data");
 
 type CommonList = {
   title: string;
@@ -22,15 +22,16 @@ type MarketPrice = {
 };
 
 export type MarketPriceMap = Record<string, MarketPrice>;
+export type MarketPriceResponse = { data: MarketPriceMap; date: string | Date | null };
 
 export type ListData = {
   data: CommonList[];
   date: string | Date | null;
 };
 
-const BASE_URL = "https://www.vfpck.org";
+export const BASE_URL = "https://www.vfpck.org";
 
-async function fetchTableList(url: string, tableIndex: number): Promise<ListData> {
+export async function fetchTableList(url: string, tableIndex: number): Promise<ListData> {
   const { data } = await axios.get(url);
   const $ = cheerio.load(data);
 
@@ -98,14 +99,16 @@ export async function fetchListedItems(): Promise<ListData> {
   return data;
 }
 
-export async function fetchProductPriceByProductName(name: string, market?: string): Promise<MarketPriceMap> {
+export async function fetchProductPriceByProductName(name: string, market?: string): Promise<MarketPriceResponse> {
   const list = (await fetchListedItems()).data;
 
-  const item = list.find((i) => i.title.trim().toLowerCase() === name.trim().toLowerCase());
-  if (!item) return {};
+  const item = list.find(i => i.title.trim().toLowerCase() === name.trim().toLowerCase());
+  if (!item)
+    return { data: {}, date: null };
 
   const id = item.id.trim();
-  if (!id) return {};
+  if (!id)
+    return { data: {}, date: null };
   const marketFilter = market?.trim()?.toLowerCase();
 
   const url = `${BASE_URL}/vegprice.asp?ID=${id}`;
@@ -120,29 +123,33 @@ export async function fetchProductPriceByProductName(name: string, market?: stri
   // Skip the first 2 header rows
   table.find("tr").slice(2).each((_, row) => {
     const tds = $(row).find("td");
-    if (tds.length < 5) return;
+    if (tds.length < 5)
+      return;
 
     const marketName = $(tds[0]).text().trim();
-    if (marketFilter && marketName.toLowerCase() !== marketFilter) return; // skip non-matching markets
+    if (marketFilter && marketName.toLowerCase() !== marketFilter)
+      return; // skip non-matching markets
 
     results[marketName] = {
       KERALA: { wp: $(tds[1]).text().trim(), rp: $(tds[2]).text().trim() },
       OUT_OF_STATE: { wp: $(tds[3]).text().trim(), rp: $(tds[4]).text().trim() },
-      lastUpdated: date
+      lastUpdated: date,
     };
   });
 
-  return results;
+  return { data: results, date };
 }
 
-export async function fetchProductPriceByLocation(market: string, itemNameForFilter?: string): Promise<MarketPriceMap> {
+export async function fetchProductPriceByLocation(market: string, itemNameForFilter?: string): Promise<MarketPriceResponse> {
   const list = (await fetchMarketList()).data;
 
-  const item = list.find((i) => i.title.trim().toLowerCase() === market.trim().toLowerCase());
-  if (!item) return {};
+  const item = list.find(i => i.title.trim().toLowerCase() === market.trim().toLowerCase());
+  if (!item)
+    return { data: {}, date: null };
 
   const id = item.id.trim();
-  if (!id) return {};
+  if (!id)
+    return { data: {}, date: null };
   const itemNameFilter = itemNameForFilter?.trim()?.toLowerCase();
 
   const url = `${BASE_URL}/mwiseprice.asp?ID=${id}`;
@@ -157,51 +164,19 @@ export async function fetchProductPriceByLocation(market: string, itemNameForFil
   // Skip the first 2 header rows
   table.find("tr").slice(2).each((_, row) => {
     const tds = $(row).find("td");
-    if (tds.length < 5) return;
+    if (tds.length < 5)
+      return;
 
     const itemName = $(tds[0]).text().trim();
-    if (itemNameFilter && itemName.toLowerCase() !== itemNameFilter) return; // skip non-matching items
+    if (itemNameFilter && itemName.toLowerCase() !== itemNameFilter)
+      return; // skip non-matching items
 
     results[itemName] = {
       KERALA: { wp: $(tds[1]).text().trim(), rp: $(tds[2]).text().trim() },
       OUT_OF_STATE: { wp: $(tds[3]).text().trim(), rp: $(tds[4]).text().trim() },
-      lastUpdated: date
+      lastUpdated: date,
     };
   });
 
-  return results;
+  return { data: results, date };
 }
-
-// JSON FILES HANDLING
-async function updateJsonFiles() {
-  try {
-    const url = `${BASE_URL}/market_price.asp`;
-    const marketData = await fetchTableList(url, 1);
-    const itemData = await fetchTableList(url, 2);
-
-    const dir = DATA_DIR;
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
-    }
-
-    fs.writeFileSync(
-      path.join(dir, "markets.json"),
-      JSON.stringify(marketData, null, 2),
-      "utf-8",
-    );
-
-    fs.writeFileSync(
-      path.join(dir, "items.json"),
-      JSON.stringify(itemData, null, 2),
-      "utf-8",
-    );
-
-    // eslint-disable-next-line no-console
-    console.log("JSON files updated successfully!");
-  }
-  catch (error) {
-    console.error("Error updating JSON files:", error);
-  }
-}
-// Run immediately (hook this into a cron job using github actions)
-updateJsonFiles();
