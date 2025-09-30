@@ -2,11 +2,11 @@ name: Fetch Prices
 
 on:
   schedule:
-    - cron: '* * * * *'   # every 1 minute for testing
+    # - cron: '*/5 * * * *'   # every 5 minute for testing
     # fetch daily prices 3 times
-    # - cron: '30 0 * * *'   # 6:00 AM IST
-    # - cron: '30 5 * * *'   # 11:00 AM IST
-    # - cron: '30 14 * * *'  # 8:00 PM IST
+    - cron: '30 0 * * *'   # 6:00 AM IST
+    - cron: '30 5 * * *'   # 11:00 AM IST
+    - cron: '30 14 * * *'  # 8:00 PM IST
 
   workflow_dispatch:  # allow manual run
 
