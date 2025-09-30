@@ -1,17 +1,9 @@
 import express from "express";
 
-import type MessageResponse from "../interfaces/message-response.js";
-
-import emojis from "./emojis.js";
+import marketPrices from "./market-prices.js";
 
 const router = express.Router();
 
-router.get<object, MessageResponse>("/", (req, res) => {
-  res.json({
-    message: "API - 👋🌎🌍🌏",
-  });
-});
-
-router.use("/emojis", emojis);
+router.use("/", marketPrices);
 
 export default router;
