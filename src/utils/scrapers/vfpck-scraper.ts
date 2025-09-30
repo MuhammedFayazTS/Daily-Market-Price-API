@@ -10,6 +10,19 @@ type CommonList = {
   id: string;
 };
 
+type PriceInfo = {
+  wp: string;
+  rp: string;
+};
+
+type MarketPrice = {
+  KERALA: PriceInfo;
+  OUT_OF_STATE: PriceInfo;
+  lastUpdated: string | Date | null;
+};
+
+export type MarketPriceMap = Record<string, MarketPrice>;
+
 export type ListData = {
   data: CommonList[];
   date: string | Date | null;
@@ -85,6 +98,81 @@ export async function fetchListedItems(): Promise<ListData> {
   return data;
 }
 
+export async function fetchProductPriceByProductName(name: string, market?: string): Promise<MarketPriceMap> {
+  const list = (await fetchListedItems()).data;
+
+  const item = list.find((i) => i.title.trim().toLowerCase() === name.trim().toLowerCase());
+  if (!item) return {};
+
+  const id = item.id.trim();
+  if (!id) return {};
+  const marketFilter = market?.trim()?.toLowerCase();
+
+  const url = `${BASE_URL}/vegprice.asp?ID=${id}`;
+  const { data } = await axios.get<string>(url);
+  const $ = cheerio.load(data);
+
+  const date = fetchDateValue(data);
+
+  const table = $("table").eq(1);
+  const results: MarketPriceMap = {};
+
+  // Skip the first 2 header rows
+  table.find("tr").slice(2).each((_, row) => {
+    const tds = $(row).find("td");
+    if (tds.length < 5) return;
+
+    const marketName = $(tds[0]).text().trim();
+    if (marketFilter && marketName.toLowerCase() !== marketFilter) return; // skip non-matching markets
+
+    results[marketName] = {
+      KERALA: { wp: $(tds[1]).text().trim(), rp: $(tds[2]).text().trim() },
+      OUT_OF_STATE: { wp: $(tds[3]).text().trim(), rp: $(tds[4]).text().trim() },
+      lastUpdated: date
+    };
+  });
+
+  return results;
+}
+
+export async function fetchProductPriceByLocation(market: string, itemNameForFilter?: string): Promise<MarketPriceMap> {
+  const list = (await fetchMarketList()).data;
+
+  const item = list.find((i) => i.title.trim().toLowerCase() === market.trim().toLowerCase());
+  if (!item) return {};
+
+  const id = item.id.trim();
+  if (!id) return {};
+  const itemNameFilter = itemNameForFilter?.trim()?.toLowerCase();
+
+  const url = `${BASE_URL}/mwiseprice.asp?ID=${id}`;
+  const { data } = await axios.get<string>(url);
+  const $ = cheerio.load(data);
+
+  const date = fetchDateValue(data);
+
+  const table = $("table").eq(1);
+  const results: MarketPriceMap = {};
+
+  // Skip the first 2 header rows
+  table.find("tr").slice(2).each((_, row) => {
+    const tds = $(row).find("td");
+    if (tds.length < 5) return;
+
+    const itemName = $(tds[0]).text().trim();
+    if (itemNameFilter && itemName.toLowerCase() !== itemNameFilter) return; // skip non-matching items
+
+    results[itemName] = {
+      KERALA: { wp: $(tds[1]).text().trim(), rp: $(tds[2]).text().trim() },
+      OUT_OF_STATE: { wp: $(tds[3]).text().trim(), rp: $(tds[4]).text().trim() },
+      lastUpdated: date
+    };
+  });
+
+  return results;
+}
+
+// JSON FILES HANDLING
 async function updateJsonFiles() {
   try {
     const url = `${BASE_URL}/market_price.asp`;
@@ -99,18 +187,19 @@ async function updateJsonFiles() {
     fs.writeFileSync(
       path.join(dir, "markets.json"),
       JSON.stringify(marketData, null, 2),
-      "utf-8"
+      "utf-8",
     );
 
     fs.writeFileSync(
       path.join(dir, "items.json"),
       JSON.stringify(itemData, null, 2),
-      "utf-8"
+      "utf-8",
     );
 
     // eslint-disable-next-line no-console
     console.log("JSON files updated successfully!");
-  } catch (error) {
+  }
+  catch (error) {
     console.error("Error updating JSON files:", error);
   }
 }
