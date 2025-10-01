@@ -1,9 +1,9 @@
 import express from "express";
 
 import type MessageResponse from "../interfaces/message-response.js";
-import type { ListData, MarketPriceResponse } from "../utils/vfpck-scraper.js";
+import type { ListData, MarketPriceResponse } from "../utils/scraper.js";
 
-import { fetchListedItems, fetchMarketList, fetchProductPriceByLocation, fetchProductPriceByProductName } from "../utils/vfpck-scraper.js";
+import { fetchListedItems, fetchMarketList, fetchProductPriceByLocation, fetchProductPriceByProductName } from "../utils/scraper.js";
 
 const router = express.Router();
 

@@ -3,7 +3,7 @@ import * as cheerio from "cheerio";
 import fs from "node:fs";
 import path from "node:path";
 
-export const DATA_DIR = path.join(__dirname, "/../", "data");
+export const DATA_DIR = path.resolve(process.cwd(), "data");
 
 type CommonList = {
   title: string;
@@ -77,8 +77,8 @@ function fetchDateValue(data: any): string | null {
   return dateValue || null;
 }
 
-export async function fetchMarketList(): Promise<ListData> {
-  const filePath = path.join(DATA_DIR, "markets.json");
+export async function fetchMarketList(dir?: string): Promise<ListData> {
+  const filePath = path.join(dir || DATA_DIR, "markets.json");
   if (!fs.existsSync(filePath)) {
     throw new Error("markets.json not found. Please run updateJsonFiles first.");
   }
@@ -88,8 +88,10 @@ export async function fetchMarketList(): Promise<ListData> {
   return data;
 }
 
-export async function fetchListedItems(): Promise<ListData> {
-  const filePath = path.join(DATA_DIR, "items.json");
+export async function fetchListedItems(dir?: string): Promise<ListData> {
+  const filePath = path.join(dir || DATA_DIR, "items.json");
+
+  console.log("filePath: ", filePath)
   if (!fs.existsSync(filePath)) {
     throw new Error("items.json not found. Please run updateJsonFiles first.");
   }
@@ -99,8 +101,19 @@ export async function fetchListedItems(): Promise<ListData> {
   return data;
 }
 
-export async function fetchProductPriceByProductName(name: string, market?: string): Promise<MarketPriceResponse> {
-  const list = (await fetchListedItems()).data;
+export async function fetchLastPricesOFItems(dir?: string): Promise<ListData> {
+  const filePath = path.join(dir || DATA_DIR, "live.json");
+  if (!fs.existsSync(filePath)) {
+    throw new Error("live.json not found. Please run updateJsonFiles first.");
+  }
+
+  const raw = fs.readFileSync(filePath, "utf-8");
+  const data: ListData = JSON.parse(raw);
+  return data;
+}
+
+export async function fetchProductPriceByProductName(name: string, market?: string, dir?: string): Promise<MarketPriceResponse> {
+  const list = (await fetchListedItems(dir)).data;
 
   const item = list.find(i => i.title.trim().toLowerCase() === name.trim().toLowerCase());
   if (!item)
@@ -109,35 +122,28 @@ export async function fetchProductPriceByProductName(name: string, market?: stri
   const id = item.id.trim();
   if (!id)
     return { data: {}, date: null };
-  const marketFilter = market?.trim()?.toLowerCase();
+  const itemList = (await fetchLastPricesOFItems(dir)).data;
 
-  const url = `${BASE_URL}/vegprice.asp?ID=${id}`;
-  const { data } = await axios.get<string>(url);
-  const $ = cheerio.load(data);
+  const product = Object.entries(itemList).find(
+    ([productName]) => productName.trim().toLowerCase() === name.trim().toLowerCase()
+  );
 
-  const date = fetchDateValue(data);
+  if (!product) return { data: {}, date: null };
 
-  const table = $("table").eq(1);
+  const [, markets] = product;
+
   const results: MarketPriceMap = {};
+  let lastDate: string | Date | null = null;
 
-  // Skip the first 2 header rows
-  table.find("tr").slice(2).each((_, row) => {
-    const tds = $(row).find("td");
-    if (tds.length < 5)
-      return;
+  for (const [marketName, marketData] of Object.entries(markets as unknown as Record<string, MarketPrice>)) {
+    if (market && marketName.trim().toLowerCase() !== market.trim().toLowerCase()) {
+      continue; // skip non-matching market
+    }
+    results[marketName] = marketData;
+    lastDate = marketData.lastUpdated;
+  }
 
-    const marketName = $(tds[0]).text().trim();
-    if (marketFilter && marketName.toLowerCase() !== marketFilter)
-      return; // skip non-matching markets
-
-    results[marketName] = {
-      KERALA: { wp: $(tds[1]).text().trim(), rp: $(tds[2]).text().trim() },
-      OUT_OF_STATE: { wp: $(tds[3]).text().trim(), rp: $(tds[4]).text().trim() },
-      lastUpdated: date,
-    };
-  });
-
-  return { data: results, date };
+  return { data: results, date: lastDate };
 }
 
 export async function fetchProductPriceByLocation(market: string, itemNameForFilter?: string): Promise<MarketPriceResponse> {

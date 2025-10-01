@@ -35,6 +35,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add src/data/live.json
+          git add data/live.json
           # Check if there are any changes to commit (staged or unstaged)
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update live prices" && git push)

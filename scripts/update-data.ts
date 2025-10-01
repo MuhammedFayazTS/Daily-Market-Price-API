@@ -2,9 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 
 // eslint-disable-next-line node/file-extension-in-import
-import { BASE_URL, fetchTableList } from "../src/utils/vfpck-scraper";
+import { BASE_URL, fetchTableList } from "../src/utils/scraper";
 
-const DATA_DIR = path.join(__dirname, "/../src/data");
+const DATA_DIR = path.join(__dirname, "/../data");
 
 // JSON FILES HANDLING
 async function fetchItemsAndMarketsList() {
