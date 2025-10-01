@@ -3,7 +3,8 @@ import * as cheerio from "cheerio";
 
 import type { CommonList, ListData, MarketPriceMap, MarketPriceResponse } from "../interfaces/common.js";
 
-import { fetchListedItems, fetchMarketList } from "./data-fetcher.js";
+// eslint-disable-next-line node/file-extension-in-import
+import { fetchListedItems, fetchMarketList } from "./data-fetcher";
 
 export const BASE_URL = "https://www.vfpck.org";
 

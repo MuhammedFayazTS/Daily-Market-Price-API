@@ -16,19 +16,41 @@ const LIVE_JSON = path.join(DATA_DIR, "/live.json");
 export async function fetchDailyPrices(): Promise<void> {
   try {
     console.log("Processing Daily prices json...");
-    const itemsList: ListData = await fetchListedItems(DATA_DIR);
-    const liveData: Record<string, LiveItem> = {};
-    let date;
 
-    // Fetch prices for each item sequentially
+    const itemsList: ListData = await fetchListedItems(DATA_DIR);
+
+    let existingLiveData: { date?: string } = {};
+    if (fs.existsSync(LIVE_JSON)) {
+      try {
+        const raw = fs.readFileSync(LIVE_JSON, "utf-8");
+        existingLiveData = JSON.parse(raw);
+      } catch (err) {
+        console.warn("Failed to parse existing live.json, will update anyway:", err);
+      }
+    }
+
+    const firstItem = itemsList.data[0];
+    if (!firstItem) {
+      console.warn("No items found to fetch prices.");
+      return;
+    }
+
+    const { date: firstDate } = await fetchProductPriceByProductName(firstItem.title.trim(), undefined, DATA_DIR);
+
+    if (existingLiveData.date && existingLiveData.date === firstDate) {
+      console.log("Data is already up-to-date. Skipping live.json and historic_data update.");
+      return;
+    }
+
+    const liveData: Record<string, LiveItem> = {};
+    const date: string | null | Date = firstDate || null;
+
     for (const item of itemsList.data) {
       const name = item.title.trim();
-      if (!name)
-        continue;
+      if (!name) continue;
 
       try {
         const { data, date: lastUpdated }: MarketPriceResponse = await fetchProductPriceByProductName(name, undefined, DATA_DIR);
-        date = lastUpdated;
         const safeName = name.replace(/[^\w-]/g, "_").toLowerCase();
 
         liveData[safeName] = {
@@ -38,25 +60,20 @@ export async function fetchDailyPrices(): Promise<void> {
         };
 
         generateHistoricData(name, data, lastUpdated);
-      }
-      catch (err) {
+      } catch (err) {
         console.error(`Failed to fetch price for "${name}":`, err);
       }
     }
 
-    // Ensure the directory exists
     const dir = path.dirname(LIVE_JSON);
-    if (!fs.existsSync(dir))
-      fs.mkdirSync(dir, { recursive: true });
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 
-    const data = { data: liveData, date };
+    const newLiveData = { data: liveData, date };
 
-    // Write to live.json
-    fs.writeFileSync(LIVE_JSON, JSON.stringify(data, null, 2), "utf-8");
+    fs.writeFileSync(LIVE_JSON, JSON.stringify(newLiveData, null, 2), "utf-8");
 
     console.log("Daily prices updated successfully!");
-  }
-  catch (err) {
+  } catch (err) {
     console.error("Error fetching daily prices:", err);
   }
 }
