@@ -1,13 +1,10 @@
 name: Fetch Prices
-
 on:
   schedule:
-    # - cron: '*/5 * * * *'   # every 5 minute for testing
     # fetch daily prices 3 times
     - cron: '30 0 * * *'   # 6:00 AM IST
     - cron: '30 5 * * *'   # 11:00 AM IST
     - cron: '30 14 * * *'  # 8:00 PM IST
-
   workflow_dispatch:  # allow manual run
 
 jobs:
@@ -21,22 +18,23 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          cache: 'pnpm'
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@v4 # Install pnpm
         with:
-          version: 9 # or whatever version you want
+          version: 9 # Specify a pnpm version
+          run_install: false # Don't run install yet
 
-      - name: Install dependencies
+      - name: Install dependencies with pnpm
         run: pnpm install --frozen-lockfile
 
       - name: Run fetchDailyPrices
-        run: pnpm ts-node scripts/live.ts
+        run: npx ts-node scripts/live.ts
 
       - name: Commit and push if changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data/live.json
+          # Check if there are any changes to commit (staged or unstaged)
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update live prices" && git push)
