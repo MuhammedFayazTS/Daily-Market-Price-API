@@ -1,33 +1,9 @@
 import axios from "axios";
 import * as cheerio from "cheerio";
-import fs from "node:fs";
-import path from "node:path";
 
-export const DATA_DIR = path.resolve(process.cwd(), "data");
+import type { CommonList, ListData, MarketPriceMap, MarketPriceResponse } from "../interfaces/common.js";
 
-type CommonList = {
-  title: string;
-  id: string;
-};
-
-type PriceInfo = {
-  wp: string;
-  rp: string;
-};
-
-type MarketPrice = {
-  KERALA: PriceInfo;
-  OUT_OF_STATE: PriceInfo;
-  lastUpdated: string | Date | null;
-};
-
-export type MarketPriceMap = Record<string, MarketPrice>;
-export type MarketPriceResponse = { data: MarketPriceMap; date: string | Date | null };
-
-export type ListData = {
-  data: CommonList[];
-  date: string | Date | null;
-};
+import { fetchListedItems, fetchMarketList } from "./data-fetcher.js";
 
 export const BASE_URL = "https://www.vfpck.org";
 
@@ -77,41 +53,6 @@ function fetchDateValue(data: any): string | null {
   return dateValue || null;
 }
 
-export async function fetchMarketList(dir?: string): Promise<ListData> {
-  const filePath = path.join(dir || DATA_DIR, "markets.json");
-  if (!fs.existsSync(filePath)) {
-    throw new Error("markets.json not found. Please run updateJsonFiles first.");
-  }
-
-  const raw = fs.readFileSync(filePath, "utf-8");
-  const data: ListData = JSON.parse(raw);
-  return data;
-}
-
-export async function fetchListedItems(dir?: string): Promise<ListData> {
-  const filePath = path.join(dir || DATA_DIR, "items.json");
-
-  console.log("filePath: ", filePath)
-  if (!fs.existsSync(filePath)) {
-    throw new Error("items.json not found. Please run updateJsonFiles first.");
-  }
-
-  const raw = fs.readFileSync(filePath, "utf-8");
-  const data: ListData = JSON.parse(raw);
-  return data;
-}
-
-export async function fetchLastPricesOFItems(dir?: string): Promise<ListData> {
-  const filePath = path.join(dir || DATA_DIR, "live.json");
-  if (!fs.existsSync(filePath)) {
-    throw new Error("live.json not found. Please run updateJsonFiles first.");
-  }
-
-  const raw = fs.readFileSync(filePath, "utf-8");
-  const data: ListData = JSON.parse(raw);
-  return data;
-}
-
 export async function fetchProductPriceByProductName(name: string, market?: string, dir?: string): Promise<MarketPriceResponse> {
   const list = (await fetchListedItems(dir)).data;
 
@@ -122,28 +63,34 @@ export async function fetchProductPriceByProductName(name: string, market?: stri
   const id = item.id.trim();
   if (!id)
     return { data: {}, date: null };
-  const itemList = (await fetchLastPricesOFItems(dir)).data;
+  const marketFilter = market?.trim()?.toLowerCase();
 
-  const product = Object.entries(itemList).find(
-    ([productName]) => productName.trim().toLowerCase() === name.trim().toLowerCase()
-  );
+  const url = `${BASE_URL}/vegprice.asp?ID=${id}`;
+  const { data } = await axios.get<string>(url);
+  const $ = cheerio.load(data);
 
-  if (!product) return { data: {}, date: null };
+  const date = fetchDateValue(data);
 
-  const [, markets] = product;
-
+  const table = $("table").eq(1);
   const results: MarketPriceMap = {};
-  let lastDate: string | Date | null = null;
 
-  for (const [marketName, marketData] of Object.entries(markets as unknown as Record<string, MarketPrice>)) {
-    if (market && marketName.trim().toLowerCase() !== market.trim().toLowerCase()) {
-      continue; // skip non-matching market
-    }
-    results[marketName] = marketData;
-    lastDate = marketData.lastUpdated;
-  }
+  // Skip the first 2 header rows
+  table.find("tr").slice(2).each((_, row) => {
+    const tds = $(row).find("td");
+    if (tds.length < 5)
+      return;
 
-  return { data: results, date: lastDate };
+    const marketName = $(tds[0]).text().trim();
+    if (marketFilter && marketName.toLowerCase() !== marketFilter)
+      return; // skip non-matching markets
+
+    results[marketName] = {
+      KERALA: { wp: $(tds[1]).text().trim(), rp: $(tds[2]).text().trim() },
+      OUT_OF_STATE: { wp: $(tds[3]).text().trim(), rp: $(tds[4]).text().trim() },
+    };
+  });
+
+  return { data: results, date };
 }
 
 export async function fetchProductPriceByLocation(market: string, itemNameForFilter?: string): Promise<MarketPriceResponse> {
@@ -180,7 +127,6 @@ export async function fetchProductPriceByLocation(market: string, itemNameForFil
     results[itemName] = {
       KERALA: { wp: $(tds[1]).text().trim(), rp: $(tds[2]).text().trim() },
       OUT_OF_STATE: { wp: $(tds[3]).text().trim(), rp: $(tds[4]).text().trim() },
-      lastUpdated: date,
     };
   });
 

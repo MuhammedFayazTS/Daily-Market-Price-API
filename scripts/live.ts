@@ -2,10 +2,12 @@ import fs from "node:fs";
 import path from "node:path";
 
 // eslint-disable-next-line node/file-extension-in-import
-import type { ListData, MarketPriceMap, MarketPriceResponse } from "../src/utils/scraper";
+import type { ListData, LiveItem, MarketPriceResponse } from "../src/interfaces/common";
 
 // eslint-disable-next-line node/file-extension-in-import
-import { fetchListedItems, fetchProductPriceByProductName } from "../src/utils/scraper";
+import { fetchListedItems } from "../src/utils/data-fetcher";
+// eslint-disable-next-line node/file-extension-in-import
+import { fetchProductPriceByProductName } from "../src/utils/scraper";
 
 const DATA_DIR = path.join(__dirname, "/../data");
 const HISTORIC_DIR = path.join(DATA_DIR, "/historic_data");
@@ -15,7 +17,7 @@ export async function fetchDailyPrices(): Promise<void> {
   try {
     console.log("Processing Daily prices json...");
     const itemsList: ListData = await fetchListedItems(DATA_DIR);
-    const liveData: Record<string, MarketPriceMap> = {};
+    const liveData: Record<string, LiveItem> = {};
     let date;
 
     // Fetch prices for each item sequentially
@@ -27,9 +29,15 @@ export async function fetchDailyPrices(): Promise<void> {
       try {
         const { data, date: lastUpdated }: MarketPriceResponse = await fetchProductPriceByProductName(name, undefined, DATA_DIR);
         date = lastUpdated;
-        // const safeName = name.replace(/[^a-z0-9_-]/gi, "_"); // safe file name
-        liveData[name] = data;
-        generateHistoricData(name, data, lastUpdated)
+        const safeName = name.replace(/[^\w-]/g, "_").toLowerCase();
+
+        liveData[safeName] = {
+          name,
+          data,
+          lastUpdated
+        };
+
+        generateHistoricData(name, data, lastUpdated);
       }
       catch (err) {
         console.error(`Failed to fetch price for "${name}":`, err);

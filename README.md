@@ -1,57 +1,208 @@
-# Express API Starter with Typescript
+# Kerala Vegetable Market Price API
 
-A JavaScript Express v5 starter template with sensible defaults.
+This repository provides **live and historical vegetable market prices** for various markets across Kerala, India.
+The data is scraped from the [VFPCK (Vegetable and Fruit Promotion Council Keralam)](https://www.vfpck.org) website and stored in structured JSON files.
 
-How to use this template:
+- 🔗 **Live Data File**: `data/live.json`
+- 🔗 **Markets & Items**: `data/markets.json`, `data/items.json`
+- 🔗 **Historic Data**: `data/historic_data/<item_name>.json`
 
-```sh
-pnpm dlx create-express-api@latest --typescript --directory my-api-name
+---
+
+## 📌 Overview
+
+* Provides **wholesale (wp)** and **retail (rp)** prices for vegetables across Kerala markets.
+* Data stored in JSON format (`live.json`, `items.json`, `markets.json`).
+* Includes an **Express.js API server** to serve prices by item and market.
+* Designed to be extendable for dashboards, apps, and research.
+* Maintains **historic price data** for each item in `data/historic_data/`.
+
+---
+
+## ✨ Features
+
+* 🔄 **Automatic daily scraping** from VFPCK.
+* 📂 **JSON structured data** for easy consumption.
+* 🌐 **API endpoints** for markets, items, and specific product prices.
+* 🕒 Includes **last updated date** for each product.
+* 📈 Maintains **historical price records** for analytics and tracking trends.
+
+---
+
+## 📊 Data Structure
+
+### **Live Data (live.json)**
+
+The `live.json` now stores each item under a normalized key (lowercase with underscores), along with its original name, market-wise prices, and last updated date.
+
+```json
+{
+  "data": {
+    "amaranthus_green": {
+      "name": "Amaranthus Green",
+      "data": {
+        "ALUVA": {
+          "KERALA": { "wp": "30", "rp": "40" },
+          "OUT_OF_STATE": { "wp": "0", "rp": "0" }
+        },
+        "CHALAI": {
+          "KERALA": { "wp": "40", "rp": "45" },
+          "OUT_OF_STATE": { "wp": "0", "rp": "0" }
+        }
+      },
+      "lastUpdated": "September 29, 2025"
+    }
+  },
+  "date": "September 29, 2025"
+}
 ```
 
-Includes API Server utilities:
+### Explanation of Terms
 
-- [morgan](https://www.npmjs.com/package/morgan)
-  - HTTP request logger middleware for node.js
-- [helmet](https://www.npmjs.com/package/helmet)
-  - Helmet helps you secure your Express apps by setting various HTTP headers. It's not a silver bullet, but it can help!
-- [cors](https://www.npmjs.com/package/cors)
-  - CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
+* **data** → Root container of all vegetables/fruits.
+* **Key** → Normalized item name (lowercase, underscores).
+* **name** → Original product name.
+* **Market Name** → Example: `"ALUVA"`, `"CHALAI"`.
+* **KERALA / OUT_OF_STATE** → Source of produce.
 
-Development utilities:
+  * **wp** → Wholesale Price (₹ per kg).
+  * **rp** → Retail Price (₹ per kg).
+* **lastUpdated** → Last updated date from VFPCK.
+* **Historic Data** → Stored per item in `data/historic_data/<item_name>.json`.
 
-- [typescript](https://www.npmjs.com/package/typescript)
-  - TypeScript is a language for application-scale JavaScript.
-- [tsx](https://www.npmjs.com/package/tsx)
-  - The easiest way to run TypeScript in Node.js
-- [eslint](https://www.npmjs.com/package/eslint)
-  - ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
-- [vitest](https://www.npmjs.com/package/vitest)
-  - Next generation testing framework powered by Vite.
-- [zod](https://www.npmjs.com/package/zod)
-  - Validated TypeSafe env with zod schema
-- [supertest](https://www.npmjs.com/package/supertest)
-  - HTTP assertions made easy via superagent.
+---
 
-## Setup
+## ⚙️ API
+
+Base Path: `/api`
+
+### **1. List Markets**
 
 ```
-pnpm install
+GET /veg/markets
 ```
 
-## Lint
+Response:
+
+```json
+{
+  "data": [
+    { "title": "Aluva", "id": "123" },
+    { "title": "Chalai", "id": "456" }
+  ],
+  "date": "September 29, 2025",
+  "message": "Markets listed successfully"
+}
+```
+
+---
+
+### **2. List Items (Vegetables & Fruits)**
 
 ```
-pnpm run lint
+GET /veg/items
 ```
 
-## Test
+Response:
+
+```json
+{
+  "data": [
+    { "title": "Amaranthus Green", "id": "101" },
+    { "title": "Ash Gourd", "id": "102" }
+  ],
+  "date": "September 29, 2025",
+  "message": "Vegetables and Fruits listed successfully"
+}
+```
+
+---
+
+### **3. Get Prices of a Specific Item**
 
 ```
-pnpm run test
+GET /items/:name?place=<marketName>
 ```
 
-## Development
+Example:
 
 ```
-pnpm run dev
+GET /items/Amaranthus Green?place=ALUVA
 ```
+
+Response:
+
+```json
+{
+  "data": {
+    "ALUVA": {
+      "KERALA": { "wp": "30", "rp": "40" },
+      "OUT_OF_STATE": { "wp": "0", "rp": "0" }
+    }
+  },
+  "date": "September 29, 2025",
+  "name": "Amaranthus Green",
+  "message": "Item details fetched successfully"
+}
+```
+
+*Notes:*
+
+* `place` is optional; if omitted, prices for all markets are returned.
+* `name` field in the response always returns the original product name.
+
+---
+
+## 🔄 Workflow
+
+1. Scraper fetches **market and item lists** from VFPCK website.
+
+2. Data is saved into:
+
+   * `items.json` → List of vegetables & fruits.
+   * `markets.json` → List of Kerala markets.
+   * `live.json` → Daily updated prices.
+   * `historic_data/<item>.json` → Daily historical prices for each item.
+
+3. API serves the data via **Express.js routes**.
+
+---
+
+## 📂 Project Structure
+
+```
+data/
+ ├── items.json             # List of all items
+ ├── markets.json           # List of Kerala markets
+ ├── live.json              # Latest prices
+ └── historic_data/         # Historical price data for each item
+src/
+ ├── routes/                # Express API routes
+ ├── utils/scraper.js       # Scraper logic
+ ├── utils/data-fetcher.js  # Local JSON data fetcher
+ ├── index.ts               # Server entrypoint
+scripts/
+ └── live.ts                # Daily price update and historic generation
+```
+
+---
+
+## 🤝 Contributing
+
+* Fork the repo & create feature branches.
+* Improve scrapers, add new data sources, or optimize API responses.
+* Open PRs with detailed descriptions.
+
+---
+
+## 📜 License
+
+MIT License
+
+---
+
+## ⚠️ Disclaimer
+
+This project scrapes data from **[VFPCK](https://www.vfpck.org)**.
+The data is provided **as-is** and may contain parsing errors. For official and verified information, refer to the original source.
+

@@ -1,9 +1,10 @@
 import express from "express";
 
+import type { ListData, MarketPriceResponse } from "../interfaces/common.js";
 import type MessageResponse from "../interfaces/message-response.js";
-import type { ListData, MarketPriceResponse } from "../utils/scraper.js";
 
-import { fetchListedItems, fetchMarketList, fetchProductPriceByLocation, fetchProductPriceByProductName } from "../utils/scraper.js";
+import { fetchListedItems, fetchMarketList, fetchProductPriceByProductNameFromJSON } from "../utils/data-fetcher.js";
+import { fetchProductPriceByLocation } from "../utils/scraper.js";
 
 const router = express.Router();
 
@@ -29,8 +30,8 @@ router.get<object, ListApiResponse>("/veg/items", async (req, res) => {
 router.get<ItemEndpontParams, ItemPricesApiResponse>("/items/:name", async (req, res) => {
   const name = req.params.name;
   const market = req.query.place as string;
-  const { data, date } = await fetchProductPriceByProductName(name, market);
-  res.json({ data, date, message: "Item details fetched successfully" });
+  const { data, date, name: itemName } = await fetchProductPriceByProductNameFromJSON(name, market);
+  res.json({ data, date, name: itemName, message: "Item details fetched successfully" });
 });
 
 router.get<PlaceEndpontParams, ItemPricesApiResponse>("/markets/:market", async (req, res) => {

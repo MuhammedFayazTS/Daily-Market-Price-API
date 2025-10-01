@@ -1,0 +1,22 @@
+{
+  "id": "pineapple__maurituis__green",
+  "name": "Pineapple (Maurituis) green",
+  "data": [
+    {
+      "date": "September 29, 2025",
+      "prices": [
+        {
+          "place": "VAZHAKULAM",
+          "KERALA": {
+            "wp": "44",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
+    }
+  ]
+}
