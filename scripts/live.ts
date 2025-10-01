@@ -86,12 +86,15 @@ function generateHistoricData(item: string, data: any, date: string | null | Dat
   const safeName = item.replace(/[^\w-]/g, "_").toLowerCase();
   const filePath = path.join(HISTORIC_DIR, `${safeName}.json`);
 
-  // normalize date
   const formattedDate =
     typeof date === "string" ? date : date?.toISOString().split("T")[0] ?? null;
 
-  // Transform data into the new structure
-  const prices: any[] = Object.entries(data).map(([place, placeData]: [string, any]) => ({
+  if (!formattedDate) {
+    console.warn(`No valid date provided for historic data of ${item}`);
+    return;
+  }
+
+  const prices = Object.entries(data).map(([place, placeData]: [string, any]) => ({
     place,
     KERALA: placeData.KERALA,
     OUT_OF_STATE: placeData.OUT_OF_STATE
@@ -102,7 +105,11 @@ function generateHistoricData(item: string, data: any, date: string | null | Dat
     prices
   };
 
-  let fileData: any = {
+  let fileData: {
+    id: string;
+    name: string;
+    data: Array<{ date: string; prices: typeof prices }>;
+  } = {
     id: safeName,
     name: item,
     data: []
@@ -110,15 +117,23 @@ function generateHistoricData(item: string, data: any, date: string | null | Dat
 
   if (fs.existsSync(filePath)) {
     try {
-      fileData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+      const existingData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+      if (existingData?.data && Array.isArray(existingData.data)) {
+        fileData = existingData;
+      }
     } catch (err) {
       console.error(`Failed to parse existing historic file for ${item}`, err);
     }
   }
 
-  fileData.data.push(newEntry);
-
-  fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2), "utf-8");
+  const dateExists = fileData.data.some(entry => entry.date === formattedDate);
+  if (!dateExists) {
+    fileData.data.push(newEntry);
+    fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2), "utf-8");
+    console.log(`Historic data updated for ${item}`);
+  } else {
+    console.log(`Historic data for ${item} on ${formattedDate} already exists. Skipping.`);
+  }
 }
 
 fetchDailyPrices();
