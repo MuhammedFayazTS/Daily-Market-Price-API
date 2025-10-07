@@ -280,6 +280,99 @@
           }
         }
       ]
+    },
+    {
+      "date": "October 7, 2025",
+      "prices": [
+        {
+          "place": "ALAPUZHA",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "42",
+            "rp": "48"
+          }
+        },
+        {
+          "place": "ALUVA",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "30",
+            "rp": "40"
+          }
+        },
+        {
+          "place": "CHALAI",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "35",
+            "rp": "40"
+          }
+        },
+        {
+          "place": "ERNAKULAM",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "38",
+            "rp": "42"
+          }
+        },
+        {
+          "place": "KOTTAYAM",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "40",
+            "rp": "50"
+          }
+        },
+        {
+          "place": "PALAKKAD",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "40",
+            "rp": "50"
+          }
+        },
+        {
+          "place": "PERUMBAVOOR",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "38",
+            "rp": "45"
+          }
+        },
+        {
+          "place": "THRISSUR",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "20",
+            "rp": "30"
+          }
+        }
+      ]
     }
   ]
 }

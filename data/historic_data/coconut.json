@@ -60,6 +60,33 @@
           }
         }
       ]
+    },
+    {
+      "date": "October 7, 2025",
+      "prices": [
+        {
+          "place": "ALAPUZHA",
+          "KERALA": {
+            "wp": "72",
+            "rp": "80"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        },
+        {
+          "place": "PALAKKAD",
+          "KERALA": {
+            "wp": "72",
+            "rp": "80"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
