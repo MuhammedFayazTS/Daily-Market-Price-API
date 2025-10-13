@@ -9,7 +9,7 @@ The data is scraped from the [VFPCK (Vegetable and Fruit Promotion Council Keral
 
 ---
 
-## 📌 Overview
+##  Overview
 
 * Provides **wholesale (wp)** and **retail (rp)** prices for vegetables across Kerala markets.
 * Data stored in JSON format (`live.json`, `items.json`, `markets.json`).
@@ -19,17 +19,17 @@ The data is scraped from the [VFPCK (Vegetable and Fruit Promotion Council Keral
 
 ---
 
-## ✨ Features
+##  Features
 
-* 🔄 **Automatic daily scraping** from VFPCK.
-* 📂 **JSON structured data** for easy consumption.
-* 🌐 **API endpoints** for markets, items, and specific product prices.
-* 🕒 Includes **last updated date** for each product.
-* 📈 Maintains **historical price records** for analytics and tracking trends.
+*  **Automatic daily scraping** from VFPCK.
+*  **JSON structured data** for easy consumption.
+*  **API endpoints** for markets, items, and specific product prices.
+*  Includes **last updated date** for each product.
+*  Maintains **historical price records** for analytics and tracking trends.
 
 ---
 
-## 📊 Data Structure
+##  Data Structure
 
 ### **Live Data (live.json)**
 
@@ -153,7 +153,7 @@ Response:
 
 ---
 
-## 🔄 Workflow
+##  Workflow
 
 1. Scraper fetches **market and item lists** from VFPCK website.
 
@@ -168,7 +168,7 @@ Response:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 data/
@@ -187,7 +187,7 @@ scripts/
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 * Fork the repo & create feature branches.
 * Improve scrapers, add new data sources, or optimize API responses.
@@ -195,14 +195,15 @@ scripts/
 
 ---
 
-## 📜 License
+##  License
 
 MIT License
 
 ---
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This project scrapes data from **[VFPCK](https://www.vfpck.org)**.
 The data is provided **as-is** and may contain parsing errors. For official and verified information, refer to the original source.
+- The data provided may not be accurate
 
