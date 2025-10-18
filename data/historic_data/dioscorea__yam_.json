@@ -117,6 +117,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "October 17, 2025",
+      "prices": [
+        {
+          "place": "ALAPUZHA",
+          "KERALA": {
+            "wp": "80",
+            "rp": "88"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
