@@ -625,6 +625,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "November 24, 2025",
+      "prices": [
+        {
+          "place": "PALAKKAD",
+          "KERALA": {
+            "wp": "66",
+            "rp": "72"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
