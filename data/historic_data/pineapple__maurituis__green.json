@@ -561,6 +561,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "December 8, 2025",
+      "prices": [
+        {
+          "place": "VAZHAKULAM",
+          "KERALA": {
+            "wp": "27",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
