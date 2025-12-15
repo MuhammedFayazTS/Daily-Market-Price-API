@@ -37,6 +37,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "December 15, 2025",
+      "prices": [
+        {
+          "place": "PERUMBAVOOR",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "24",
+            "rp": "30"
+          }
+        }
+      ]
     }
   ]
 }
