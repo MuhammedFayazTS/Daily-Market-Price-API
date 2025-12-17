@@ -4195,6 +4195,132 @@
           }
         }
       ]
+    },
+    {
+      "date": "December 16, 2025",
+      "prices": [
+        {
+          "place": "ALAPUZHA",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "34",
+            "rp": "40"
+          }
+        },
+        {
+          "place": "ALUVA",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "27",
+            "rp": "29"
+          }
+        },
+        {
+          "place": "CHALAI",
+          "KERALA": {
+            "wp": "40",
+            "rp": "45"
+          },
+          "OUT_OF_STATE": {
+            "wp": "35",
+            "rp": "40"
+          }
+        },
+        {
+          "place": "ERNAKULAM",
+          "KERALA": {
+            "wp": "36",
+            "rp": "40"
+          },
+          "OUT_OF_STATE": {
+            "wp": "29",
+            "rp": "34"
+          }
+        },
+        {
+          "place": "KOTTAYAM",
+          "KERALA": {
+            "wp": "38",
+            "rp": "44"
+          },
+          "OUT_OF_STATE": {
+            "wp": "33",
+            "rp": "38"
+          }
+        },
+        {
+          "place": "MANJERI",
+          "KERALA": {
+            "wp": "32",
+            "rp": "40"
+          },
+          "OUT_OF_STATE": {
+            "wp": "32",
+            "rp": "40"
+          }
+        },
+        {
+          "place": "PALAKKAD",
+          "KERALA": {
+            "wp": "35",
+            "rp": "40"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        },
+        {
+          "place": "PERUMBAVOOR",
+          "KERALA": {
+            "wp": "35",
+            "rp": "40"
+          },
+          "OUT_OF_STATE": {
+            "wp": "32",
+            "rp": "40"
+          }
+        },
+        {
+          "place": "THALASSERY",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "38",
+            "rp": "46"
+          }
+        },
+        {
+          "place": "THODUPUZHA",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "25",
+            "rp": "35"
+          }
+        },
+        {
+          "place": "THRISSUR",
+          "KERALA": {
+            "wp": "45",
+            "rp": "55"
+          },
+          "OUT_OF_STATE": {
+            "wp": "35",
+            "rp": "45"
+          }
+        }
+      ]
     }
   ]
 }
