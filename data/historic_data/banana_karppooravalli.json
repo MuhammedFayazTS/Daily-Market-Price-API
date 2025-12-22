@@ -652,6 +652,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "December 22, 2025",
+      "prices": [
+        {
+          "place": "THRISSUR",
+          "KERALA": {
+            "wp": "20",
+            "rp": "30"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
