@@ -69,6 +69,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "January 6, 2026",
+      "prices": [
+        {
+          "place": "CHALAI",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "30",
+            "rp": "35"
+          }
+        }
+      ]
     }
   ]
 }
