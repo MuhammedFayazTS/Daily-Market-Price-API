@@ -5,6 +5,22 @@
     {
       "date": null,
       "prices": []
+    },
+    {
+      "date": "January 23, 2026",
+      "prices": [
+        {
+          "place": "MANJERI",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "30",
+            "rp": "40"
+          }
+        }
+      ]
     }
   ]
 }
