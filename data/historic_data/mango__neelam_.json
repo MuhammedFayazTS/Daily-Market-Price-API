@@ -5,6 +5,22 @@
     {
       "date": null,
       "prices": []
+    },
+    {
+      "date": "February 23, 2026",
+      "prices": [
+        {
+          "place": "ALAPUZHA",
+          "KERALA": {
+            "wp": "58",
+            "rp": "66"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
