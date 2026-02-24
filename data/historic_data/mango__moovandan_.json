@@ -5,6 +5,22 @@
     {
       "date": null,
       "prices": []
+    },
+    {
+      "date": "February 24, 2026",
+      "prices": [
+        {
+          "place": "KALPATTA",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "100",
+            "rp": "120"
+          }
+        }
+      ]
     }
   ]
 }
