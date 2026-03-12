@@ -5,6 +5,22 @@
     {
       "date": null,
       "prices": []
+    },
+    {
+      "date": "March 12, 2026",
+      "prices": [
+        {
+          "place": "THRISSUR",
+          "KERALA": {
+            "wp": "70",
+            "rp": "80"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
