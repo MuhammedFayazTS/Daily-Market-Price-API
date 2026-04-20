@@ -80,6 +80,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "April 20, 2026",
+      "prices": [
+        {
+          "place": "KOTTAYAM",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "70",
+            "rp": "90"
+          }
+        }
+      ]
     }
   ]
 }
