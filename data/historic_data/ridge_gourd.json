@@ -7807,6 +7807,77 @@
           }
         }
       ]
+    },
+    {
+      "date": "May 8, 2026",
+      "prices": [
+        {
+          "place": "ALUVA",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "65",
+            "rp": "80"
+          }
+        },
+        {
+          "place": "ERNAKULAM",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "58",
+            "rp": "65"
+          }
+        },
+        {
+          "place": "PALAKKAD",
+          "KERALA": {
+            "wp": "40",
+            "rp": "50"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        },
+        {
+          "place": "PERUMBAVOOR",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "46",
+            "rp": "50"
+          }
+        },
+        {
+          "place": "THALASSERY",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "65",
+            "rp": "72"
+          }
+        },
+        {
+          "place": "THODUPUZHA",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "60",
+            "rp": "70"
+          }
+        }
+      ]
     }
   ]
 }

@@ -160,6 +160,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "May 8, 2026",
+      "prices": [
+        {
+          "place": "KOTTAYAM",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "35",
+            "rp": "50"
+          }
+        }
+      ]
     }
   ]
 }
