@@ -2674,6 +2674,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "May 18, 2026",
+      "prices": [
+        {
+          "place": "PALAKKAD",
+          "KERALA": {
+            "wp": "45",
+            "rp": "50"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
