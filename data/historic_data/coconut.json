@@ -2825,6 +2825,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "June 1, 2026",
+      "prices": [
+        {
+          "place": "PALAKKAD",
+          "KERALA": {
+            "wp": "43",
+            "rp": "50"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
