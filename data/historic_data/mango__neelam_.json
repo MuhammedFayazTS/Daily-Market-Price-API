@@ -268,6 +268,33 @@
           }
         }
       ]
+    },
+    {
+      "date": "June 8, 2026",
+      "prices": [
+        {
+          "place": "CHALAI",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "30",
+            "rp": "40"
+          }
+        },
+        {
+          "place": "PERUMBAVOOR",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "47",
+            "rp": "60"
+          }
+        }
+      ]
     }
   ]
 }

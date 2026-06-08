@@ -381,6 +381,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "June 8, 2026",
+      "prices": [
+        {
+          "place": "THALASSERY",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "85",
+            "rp": "100"
+          }
+        }
+      ]
     }
   ]
 }
