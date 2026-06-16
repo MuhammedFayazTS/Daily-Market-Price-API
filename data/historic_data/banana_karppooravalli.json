@@ -1975,6 +1975,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "June 16, 2026",
+      "prices": [
+        {
+          "place": "THRISSUR",
+          "KERALA": {
+            "wp": "25",
+            "rp": "35"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
