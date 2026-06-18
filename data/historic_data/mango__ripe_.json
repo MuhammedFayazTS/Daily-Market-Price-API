@@ -128,6 +128,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "June 18, 2026",
+      "prices": [
+        {
+          "place": "THODUPUZHA",
+          "KERALA": {
+            "wp": "1",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
