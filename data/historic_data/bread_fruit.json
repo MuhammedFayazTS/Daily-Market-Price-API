@@ -101,6 +101,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "August 4, 2026",
+      "prices": [
+        {
+          "place": "PERUMBAVOOR",
+          "KERALA": {
+            "wp": "75",
+            "rp": "80"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
