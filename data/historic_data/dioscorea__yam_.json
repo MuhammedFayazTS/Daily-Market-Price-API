@@ -1909,6 +1909,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "August 13, 2026",
+      "prices": [
+        {
+          "place": "ALAPUZHA",
+          "KERALA": {
+            "wp": "100",
+            "rp": "110"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
