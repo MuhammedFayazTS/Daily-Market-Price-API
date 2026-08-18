@@ -1373,6 +1373,44 @@
           }
         }
       ]
+    },
+    {
+      "date": "August 18, 2026",
+      "prices": [
+        {
+          "place": "KALPATTA",
+          "KERALA": {
+            "wp": "80",
+            "rp": "100"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        },
+        {
+          "place": "PERUMBAVOOR",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "60",
+            "rp": "70"
+          }
+        },
+        {
+          "place": "THALASSERY",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "75",
+            "rp": "95"
+          }
+        }
+      ]
     }
   ]
 }
