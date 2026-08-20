@@ -1411,6 +1411,44 @@
           }
         }
       ]
+    },
+    {
+      "date": "August 20, 2026",
+      "prices": [
+        {
+          "place": "KALPATTA",
+          "KERALA": {
+            "wp": "120",
+            "rp": "140"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        },
+        {
+          "place": "KOTTAYAM",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "70",
+            "rp": "90"
+          }
+        },
+        {
+          "place": "PERUMBAVOOR",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "65",
+            "rp": "75"
+          }
+        }
+      ]
     }
   ]
 }
