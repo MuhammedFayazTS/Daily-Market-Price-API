@@ -1535,6 +1535,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "September 1, 2026",
+      "prices": [
+        {
+          "place": "KALPATTA",
+          "KERALA": {
+            "wp": "140",
+            "rp": "160"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
