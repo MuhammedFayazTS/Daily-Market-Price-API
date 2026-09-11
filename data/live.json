@@ -13,24 +13,14 @@
             "rp": "0"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "60",
-            "rp": "65"
-          },
-          "OUT_OF_STATE": {
-            "wp": "0",
-            "rp": "0"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "44"
+            "wp": "43",
+            "rp": "47"
           }
         },
         "MANJERI": {
@@ -64,7 +54,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "amaranthus_red": {
       "name": "Amaranthus Red",
@@ -79,24 +69,14 @@
             "rp": "0"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "60",
-            "rp": "65"
-          },
-          "OUT_OF_STATE": {
-            "wp": "0",
-            "rp": "0"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "44"
+            "wp": "43",
+            "rp": "47"
           }
         },
         "KOTTAYAM": {
@@ -105,8 +85,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "32",
-            "rp": "42"
+            "wp": "30",
+            "rp": "40"
           }
         },
         "MANJERI": {
@@ -170,7 +150,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "ash_gourd": {
       "name": "Ash Gourd",
@@ -181,8 +161,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "20",
-            "rp": "26"
+            "wp": "18",
+            "rp": "25"
           }
         },
         "ALUVA": {
@@ -191,18 +171,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "16",
+            "wp": "15",
             "rp": "30"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "20",
-            "rp": "25"
           }
         },
         "ERNAKULAM": {
@@ -211,8 +181,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "20",
-            "rp": "25"
+            "wp": "23",
+            "rp": "28"
           }
         },
         "KOTTAYAM": {
@@ -251,8 +221,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "20",
-            "rp": "30"
+            "wp": "18",
+            "rp": "25"
           }
         },
         "THALASSERY": {
@@ -261,8 +231,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "30",
-            "rp": "36"
+            "wp": "25",
+            "rp": "30"
           }
         },
         "THODUPUZHA": {
@@ -286,7 +256,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "banana_kadali": {
       "name": "Banana Kadali",
@@ -307,7 +277,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "banana_karppooravalli": {
       "name": "Banana Karppooravalli",
@@ -323,7 +293,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "banana_nendran": {
       "name": "Banana Nendran",
@@ -334,8 +304,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "55",
-            "rp": "63"
+            "wp": "54",
+            "rp": "62"
           }
         },
         "ALUVA": {
@@ -348,19 +318,9 @@
             "rp": "52"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "65",
-            "rp": "70"
-          },
-          "OUT_OF_STATE": {
-            "wp": "60",
-            "rp": "65"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
-            "wp": "53",
+            "wp": "54",
             "rp": "60"
           },
           "OUT_OF_STATE": {
@@ -400,8 +360,8 @@
         },
         "PERUMBAVOOR": {
           "KERALA": {
-            "wp": "50",
-            "rp": "56"
+            "wp": "48",
+            "rp": "55"
           },
           "OUT_OF_STATE": {
             "wp": "45",
@@ -414,7 +374,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "61",
+            "wp": "60",
             "rp": "70"
           }
         },
@@ -430,16 +390,16 @@
         },
         "THRISSUR": {
           "KERALA": {
-            "wp": "55",
-            "rp": "65"
-          },
-          "OUT_OF_STATE": {
             "wp": "50",
             "rp": "60"
+          },
+          "OUT_OF_STATE": {
+            "wp": "45",
+            "rp": "55"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "banana_njalipoovan": {
       "name": "Banana Njalipoovan",
@@ -464,23 +424,13 @@
             "rp": "86"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "90",
-            "rp": "95"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "80",
+            "wp": "78",
             "rp": "85"
           }
         },
@@ -520,8 +470,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "75",
-            "rp": "85"
+            "wp": "70",
+            "rp": "80"
           }
         },
         "THALASSERY": {
@@ -550,12 +500,12 @@
             "rp": "75"
           },
           "OUT_OF_STATE": {
-            "wp": "65",
-            "rp": "75"
+            "wp": "70",
+            "rp": "80"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "banana_palayanthodan": {
       "name": "Banana Palayanthodan",
@@ -580,23 +530,13 @@
             "rp": "32"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "30",
-            "rp": "35"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "36",
+            "wp": "35",
             "rp": "40"
           }
         },
@@ -606,14 +546,14 @@
             "rp": "35"
           },
           "OUT_OF_STATE": {
-            "wp": "34",
-            "rp": "40"
+            "wp": "0",
+            "rp": "0"
           }
         },
         "MANJERI": {
           "KERALA": {
-            "wp": "33",
-            "rp": "40"
+            "wp": "0",
+            "rp": "0"
           },
           "OUT_OF_STATE": {
             "wp": "35",
@@ -636,7 +576,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "25",
+            "wp": "26",
             "rp": "35"
           }
         },
@@ -646,8 +586,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "39",
-            "rp": "47"
+            "wp": "41",
+            "rp": "50"
           }
         },
         "THODUPUZHA": {
@@ -671,7 +611,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "banana_poovan": {
       "name": "Banana Poovan",
@@ -684,16 +624,6 @@
           "OUT_OF_STATE": {
             "wp": "60",
             "rp": "68"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "45",
-            "rp": "50"
           }
         },
         "ERNAKULAM": {
@@ -742,8 +672,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "50"
+            "wp": "42",
+            "rp": "48"
           }
         },
         "THODUPUZHA": {
@@ -767,7 +697,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "banana_robusta": {
       "name": "Banana Robusta",
@@ -792,23 +722,13 @@
             "rp": "32"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "45"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "30",
+            "wp": "29",
             "rp": "35"
           }
         },
@@ -824,8 +744,8 @@
         },
         "MANJERI": {
           "KERALA": {
-            "wp": "32",
-            "rp": "40"
+            "wp": "0",
+            "rp": "0"
           },
           "OUT_OF_STATE": {
             "wp": "40",
@@ -848,8 +768,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "30",
-            "rp": "40"
+            "wp": "29",
+            "rp": "35"
           }
         },
         "THALASSERY": {
@@ -858,8 +778,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "29",
-            "rp": "37"
+            "wp": "27",
+            "rp": "35"
           }
         },
         "THODUPUZHA": {
@@ -878,12 +798,12 @@
             "rp": "40"
           },
           "OUT_OF_STATE": {
-            "wp": "27",
+            "wp": "25",
             "rp": "35"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "beetroot": {
       "name": "Beetroot",
@@ -894,8 +814,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "65",
-            "rp": "73"
+            "wp": "62",
+            "rp": "70"
           }
         },
         "ALUVA": {
@@ -906,16 +826,6 @@
           "OUT_OF_STATE": {
             "wp": "30",
             "rp": "40"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "45"
           }
         },
         "ERNAKULAM": {
@@ -954,8 +864,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "50"
+            "wp": "30",
+            "rp": "40"
           }
         },
         "PERUMBAVOOR": {
@@ -984,8 +894,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "55",
-            "rp": "65"
+            "wp": "50",
+            "rp": "60"
           }
         },
         "THRISSUR": {
@@ -994,12 +904,12 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "30",
-            "rp": "40"
+            "wp": "35",
+            "rp": "45"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "bhindi": {
       "name": "Bhindi",
@@ -1024,23 +934,13 @@
             "rp": "40"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "20",
-            "rp": "25"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "35",
+            "wp": "36",
             "rp": "42"
           }
         },
@@ -1070,8 +970,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "32",
-            "rp": "40"
+            "wp": "40",
+            "rp": "45"
           }
         },
         "PERUMBAVOOR": {
@@ -1090,8 +990,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "36",
-            "rp": "42"
+            "wp": "38",
+            "rp": "44"
           }
         },
         "THODUPUZHA": {
@@ -1100,8 +1000,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "30",
-            "rp": "40"
+            "wp": "35",
+            "rp": "45"
           }
         },
         "THRISSUR": {
@@ -1115,7 +1015,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "bitter_gourd": {
       "name": "Bitter Gourd",
@@ -1140,34 +1040,24 @@
             "rp": "60"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "60",
-            "rp": "65"
-          },
-          "OUT_OF_STATE": {
-            "wp": "0",
-            "rp": "0"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "55",
-            "rp": "60"
+            "wp": "57",
+            "rp": "62"
           }
         },
         "KOTTAYAM": {
           "KERALA": {
-            "wp": "60",
-            "rp": "70"
+            "wp": "65",
+            "rp": "75"
           },
           "OUT_OF_STATE": {
-            "wp": "55",
-            "rp": "65"
+            "wp": "60",
+            "rp": "70"
           }
         },
         "MANJERI": {
@@ -1182,12 +1072,12 @@
         },
         "PALAKKAD": {
           "KERALA": {
-            "wp": "52",
-            "rp": "60"
+            "wp": "60",
+            "rp": "70"
           },
           "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "50"
+            "wp": "50",
+            "rp": "60"
           }
         },
         "PERUMBAVOOR": {
@@ -1206,8 +1096,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "55",
-            "rp": "62"
+            "wp": "60",
+            "rp": "67"
           }
         },
         "THODUPUZHA": {
@@ -1231,7 +1121,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "bottle_gourd": {
       "name": "Bottle Gourd",
@@ -1256,16 +1146,6 @@
             "rp": "20"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "35",
-            "rp": "40"
-          },
-          "OUT_OF_STATE": {
-            "wp": "0",
-            "rp": "0"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
@@ -1283,13 +1163,13 @@
           },
           "OUT_OF_STATE": {
             "wp": "32",
-            "rp": "42"
+            "rp": "40"
           }
         },
         "MANJERI": {
           "KERALA": {
-            "wp": "17",
-            "rp": "25"
+            "wp": "0",
+            "rp": "0"
           },
           "OUT_OF_STATE": {
             "wp": "17",
@@ -1338,21 +1218,32 @@
         },
         "THRISSUR": {
           "KERALA": {
-            "wp": "35",
-            "rp": "45"
+            "wp": "30",
+            "rp": "40"
           },
           "OUT_OF_STATE": {
-            "wp": "25",
-            "rp": "35"
+            "wp": "20",
+            "rp": "30"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "bread_fruit": {
       "name": "Bread Fruit",
-      "data": {},
-      "lastUpdated": null
+      "data": {
+        "PERUMBAVOOR": {
+          "KERALA": {
+            "wp": "75",
+            "rp": "80"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      },
+      "lastUpdated": "September 11, 2026"
     },
     "brinjal_green_long": {
       "name": "Brinjal Green Long",
@@ -1363,8 +1254,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "44",
-            "rp": "52"
+            "wp": "45",
+            "rp": "53"
           }
         },
         "ALUVA": {
@@ -1375,16 +1266,6 @@
           "OUT_OF_STATE": {
             "wp": "30",
             "rp": "40"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "50",
-            "rp": "55"
           }
         },
         "ERNAKULAM": {
@@ -1433,7 +1314,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "36",
+            "wp": "38",
             "rp": "45"
           }
         },
@@ -1443,8 +1324,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "25",
-            "rp": "30"
+            "wp": "30",
+            "rp": "36"
           }
         },
         "THODUPUZHA": {
@@ -1458,7 +1339,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "brinjal_purple_long": {
       "name": "Brinjal Purple Long",
@@ -1479,8 +1360,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "46"
+            "wp": "30",
+            "rp": "36"
           }
         },
         "THRISSUR": {
@@ -1494,7 +1375,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "brinjal_purple_round": {
       "name": "Brinjal Purple Round",
@@ -1519,24 +1400,14 @@
             "rp": "40"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "30",
-            "rp": "35"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "39",
-            "rp": "45"
+            "wp": "36",
+            "rp": "42"
           }
         },
         "KOTTAYAM": {
@@ -1600,7 +1471,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "cabbage": {
       "name": "Cabbage",
@@ -1611,7 +1482,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "35",
+            "wp": "34",
             "rp": "42"
           }
         },
@@ -1621,18 +1492,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "16",
+            "wp": "20",
             "rp": "30"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "30",
-            "rp": "35"
           }
         },
         "ERNAKULAM": {
@@ -1642,7 +1503,7 @@
           },
           "OUT_OF_STATE": {
             "wp": "32",
-            "rp": "37"
+            "rp": "38"
           }
         },
         "KOTTAYAM": {
@@ -1671,8 +1532,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "15",
-            "rp": "20"
+            "wp": "18",
+            "rp": "25"
           }
         },
         "PERUMBAVOOR": {
@@ -1711,12 +1572,12 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "10",
-            "rp": "18"
+            "wp": "15",
+            "rp": "25"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "carrot": {
       "name": "Carrot",
@@ -1727,8 +1588,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "64",
-            "rp": "72"
+            "wp": "62",
+            "rp": "70"
           }
         },
         "ALUVA": {
@@ -1737,18 +1598,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "60"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "70",
-            "rp": "75"
+            "wp": "35",
+            "rp": "50"
           }
         },
         "ERNAKULAM": {
@@ -1757,8 +1608,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "52",
-            "rp": "57"
+            "wp": "58",
+            "rp": "62"
           }
         },
         "KOTTAYAM": {
@@ -1797,8 +1648,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "46",
-            "rp": "55"
+            "wp": "48",
+            "rp": "58"
           }
         },
         "THALASSERY": {
@@ -1827,12 +1678,12 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "30",
-            "rp": "40"
+            "wp": "50",
+            "rp": "60"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "cauliflower": {
       "name": "Cauliflower",
@@ -1857,23 +1708,13 @@
             "rp": "40"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "45"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "42",
+            "wp": "40",
             "rp": "47"
           }
         },
@@ -1913,8 +1754,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "42",
-            "rp": "50"
+            "wp": "36",
+            "rp": "45"
           }
         },
         "THALASSERY": {
@@ -1948,7 +1789,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "cluster_beans": {
       "name": "Cluster Beans",
@@ -1973,23 +1814,13 @@
             "rp": "40"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "30",
-            "rp": "35"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "42",
+            "wp": "40",
             "rp": "47"
           }
         },
@@ -2030,7 +1861,7 @@
           },
           "OUT_OF_STATE": {
             "wp": "40",
-            "rp": "46"
+            "rp": "45"
           }
         },
         "THALASSERY": {
@@ -2064,7 +1895,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "coconut": {
       "name": "Coconut",
@@ -2090,7 +1921,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "coleus": {
       "name": "Coleus",
@@ -2131,8 +1962,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "70",
-            "rp": "80"
+            "wp": "60",
+            "rp": "70"
           }
         },
         "THODUPUZHA": {
@@ -2156,7 +1987,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "colocasia": {
       "name": "Colocasia",
@@ -2184,16 +2015,6 @@
           "OUT_OF_STATE": {
             "wp": "55",
             "rp": "70"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "70",
-            "rp": "80"
           }
         },
         "ERNAKULAM": {
@@ -2242,7 +2063,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "66",
+            "wp": "64",
             "rp": "70"
           }
         },
@@ -2267,7 +2088,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "colocasia_small": {
       "name": "Colocasia small",
@@ -2292,23 +2113,13 @@
             "rp": "60"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "45"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "43",
+            "wp": "45",
             "rp": "50"
           }
         },
@@ -2373,7 +2184,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "cowpea": {
       "name": "Cowpea",
@@ -2394,18 +2205,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "35",
-            "rp": "50"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "95",
-            "rp": "100"
-          },
-          "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "45"
+            "wp": "30",
+            "rp": "40"
           }
         },
         "ERNAKULAM": {
@@ -2414,18 +2215,18 @@
             "rp": "60"
           },
           "OUT_OF_STATE": {
-            "wp": "48",
-            "rp": "52"
+            "wp": "50",
+            "rp": "55"
           }
         },
         "KOTTAYAM": {
           "KERALA": {
-            "wp": "60",
-            "rp": "70"
+            "wp": "65",
+            "rp": "75"
           },
           "OUT_OF_STATE": {
-            "wp": "55",
-            "rp": "65"
+            "wp": "60",
+            "rp": "70"
           }
         },
         "MANJERI": {
@@ -2440,8 +2241,8 @@
         },
         "PALAKKAD": {
           "KERALA": {
-            "wp": "50",
-            "rp": "60"
+            "wp": "60",
+            "rp": "70"
           },
           "OUT_OF_STATE": {
             "wp": "40",
@@ -2480,16 +2281,16 @@
         },
         "THRISSUR": {
           "KERALA": {
-            "wp": "50",
-            "rp": "55"
+            "wp": "40",
+            "rp": "50"
           },
           "OUT_OF_STATE": {
-            "wp": "45",
-            "rp": "55"
+            "wp": "35",
+            "rp": "45"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "cucumber": {
       "name": "Cucumber",
@@ -2500,8 +2301,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "18",
-            "rp": "24"
+            "wp": "20",
+            "rp": "26"
           }
         },
         "ALUVA": {
@@ -2514,16 +2315,6 @@
             "rp": "30"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "15",
-            "rp": "20"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
@@ -2531,17 +2322,17 @@
           },
           "OUT_OF_STATE": {
             "wp": "22",
-            "rp": "28"
+            "rp": "26"
           }
         },
         "KOTTAYAM": {
           "KERALA": {
-            "wp": "20",
-            "rp": "28"
+            "wp": "16",
+            "rp": "24"
           },
           "OUT_OF_STATE": {
-            "wp": "20",
-            "rp": "28"
+            "wp": "22",
+            "rp": "30"
           }
         },
         "MANJERI": {
@@ -2560,8 +2351,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "10",
-            "rp": "15"
+            "wp": "15",
+            "rp": "20"
           }
         },
         "PERUMBAVOOR": {
@@ -2570,7 +2361,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "27",
+            "wp": "28",
             "rp": "35"
           }
         },
@@ -2580,8 +2371,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "30",
-            "rp": "36"
+            "wp": "32",
+            "rp": "38"
           }
         },
         "THODUPUZHA": {
@@ -2605,7 +2396,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "dioscorea__yam_": {
       "name": "Dioscorea (Yam)",
@@ -2621,39 +2412,19 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "drumstick": {
       "name": "Drumstick",
       "data": {
-        "ALAPUZHA": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "35",
-            "rp": "43"
-          }
-        },
         "ALUVA": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "25",
+            "wp": "24",
             "rp": "40"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "55",
-            "rp": "60"
           }
         },
         "ERNAKULAM": {
@@ -2712,8 +2483,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "37",
-            "rp": "43"
+            "wp": "36",
+            "rp": "42"
           }
         },
         "THODUPUZHA": {
@@ -2737,7 +2508,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "elephant_foot_yam": {
       "name": "Elephant foot yam",
@@ -2754,7 +2525,7 @@
         },
         "ALUVA": {
           "KERALA": {
-            "wp": "28",
+            "wp": "30",
             "rp": "40"
           },
           "OUT_OF_STATE": {
@@ -2762,24 +2533,14 @@
             "rp": "0"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "45"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
-            "wp": "43",
+            "wp": "45",
             "rp": "50"
           },
           "OUT_OF_STATE": {
             "wp": "40",
-            "rp": "46"
+            "rp": "45"
           }
         },
         "KOTTAYAM": {
@@ -2853,7 +2614,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "french_beans": {
       "name": "French Beans",
@@ -2878,16 +2639,6 @@
             "rp": "60"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "85",
-            "rp": "90"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
@@ -2895,7 +2646,7 @@
           },
           "OUT_OF_STATE": {
             "wp": "65",
-            "rp": "72"
+            "rp": "70"
           }
         },
         "KOTTAYAM": {
@@ -2904,8 +2655,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "60",
-            "rp": "70"
+            "wp": "65",
+            "rp": "75"
           }
         },
         "MANJERI": {
@@ -2924,8 +2675,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "60",
-            "rp": "70"
+            "wp": "70",
+            "rp": "80"
           }
         },
         "PERUMBAVOOR": {
@@ -2934,7 +2685,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "58",
+            "wp": "60",
             "rp": "70"
           }
         },
@@ -2944,8 +2695,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "60",
-            "rp": "67"
+            "wp": "65",
+            "rp": "72"
           }
         },
         "THODUPUZHA": {
@@ -2964,12 +2715,12 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "65",
-            "rp": "75"
+            "wp": "60",
+            "rp": "70"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "ginger": {
       "name": "Ginger",
@@ -2994,34 +2745,24 @@
             "rp": "200"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "160",
-            "rp": "170"
-          },
-          "OUT_OF_STATE": {
-            "wp": "0",
-            "rp": "0"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "165",
-            "rp": "170"
+            "wp": "158",
+            "rp": "162"
           }
         },
         "KOTTAYAM": {
           "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
             "wp": "170",
             "rp": "200"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
           }
         },
         "MANJERI": {
@@ -3070,13 +2811,13 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "160",
-            "rp": "170"
+            "wp": "150",
+            "rp": "160"
           }
         },
         "THRISSUR": {
           "KERALA": {
-            "wp": "150",
+            "wp": "180",
             "rp": "160"
           },
           "OUT_OF_STATE": {
@@ -3085,21 +2826,11 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "gooseberry": {
       "name": "Gooseberry",
       "data": {
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "75",
-            "rp": "80"
-          }
-        },
         "KOTTAYAM": {
           "KERALA": {
             "wp": "0",
@@ -3116,8 +2847,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "95",
-            "rp": "110"
+            "wp": "90",
+            "rp": "100"
           }
         },
         "THRISSUR": {
@@ -3126,12 +2857,12 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "120",
-            "rp": "130"
+            "wp": "110",
+            "rp": "120"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "green_chilli__big_": {
       "name": "Green Chilli (Big)",
@@ -3154,16 +2885,6 @@
           "OUT_OF_STATE": {
             "wp": "35",
             "rp": "60"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "45"
           }
         },
         "ERNAKULAM": {
@@ -3202,8 +2923,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "32",
-            "rp": "40"
+            "wp": "40",
+            "rp": "50"
           }
         },
         "PERUMBAVOOR": {
@@ -3212,8 +2933,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "50"
+            "wp": "36",
+            "rp": "45"
           }
         },
         "THALASSERY": {
@@ -3222,8 +2943,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "35",
-            "rp": "44"
+            "wp": "40",
+            "rp": "46"
           }
         },
         "THODUPUZHA": {
@@ -3242,12 +2963,12 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "50",
-            "rp": "60"
+            "wp": "40",
+            "rp": "50"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "lime__big_": {
       "name": "Lime (Big)",
@@ -3262,14 +2983,14 @@
             "rp": "88"
           }
         },
-        "CHALAI": {
+        "ALUVA": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "60",
-            "rp": "70"
+            "wp": "70",
+            "rp": "80"
           }
         },
         "ERNAKULAM": {
@@ -3278,8 +2999,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "83",
-            "rp": "90"
+            "wp": "86",
+            "rp": "92"
           }
         },
         "KOTTAYAM": {
@@ -3302,24 +3023,14 @@
             "rp": "65"
           }
         },
-        "PALAKKAD": {
-          "KERALA": {
-            "wp": "40",
-            "rp": "50"
-          },
-          "OUT_OF_STATE": {
-            "wp": "0",
-            "rp": "0"
-          }
-        },
         "PERUMBAVOOR": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "60",
-            "rp": "70"
+            "wp": "65",
+            "rp": "80"
           }
         },
         "THODUPUZHA": {
@@ -3343,7 +3054,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "lime__small_": {
       "name": "Lime (Small)",
@@ -3359,16 +3070,6 @@
           }
         },
         "ALUVA": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "8",
-            "rp": "10"
-          }
-        },
-        "CHALAI": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
@@ -3439,7 +3140,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "little_gourd_coccinea": {
       "name": "Little Gourd Coccinea",
@@ -3460,18 +3161,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "38",
-            "rp": "50"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "45",
-            "rp": "50"
+            "wp": "40",
+            "rp": "60"
           }
         },
         "ERNAKULAM": {
@@ -3480,7 +3171,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "46",
+            "wp": "48",
             "rp": "52"
           }
         },
@@ -3530,8 +3221,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "46",
-            "rp": "52"
+            "wp": "40",
+            "rp": "46"
           }
         },
         "THODUPUZHA": {
@@ -3546,8 +3237,8 @@
         },
         "THRISSUR": {
           "KERALA": {
-            "wp": "55",
-            "rp": "65"
+            "wp": "50",
+            "rp": "60"
           },
           "OUT_OF_STATE": {
             "wp": "45",
@@ -3555,7 +3246,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "mango__bangarapally_": {
       "name": "Mango (Bangarapally)",
@@ -3586,18 +3277,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "45",
+            "wp": "50",
             "rp": "60"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "60",
-            "rp": "70"
           }
         },
         "ERNAKULAM": {
@@ -3636,8 +3317,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "60",
-            "rp": "70"
+            "wp": "70",
+            "rp": "80"
           }
         },
         "PERUMBAVOOR": {
@@ -3646,8 +3327,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "76",
-            "rp": "90"
+            "wp": "70",
+            "rp": "80"
           }
         },
         "THALASSERY": {
@@ -3666,8 +3347,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "75",
-            "rp": "85"
+            "wp": "70",
+            "rp": "80"
           }
         },
         "THRISSUR": {
@@ -3681,7 +3362,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "mango__malgoa_": {
       "name": "Mango (Malgoa)",
@@ -3737,18 +3418,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "56",
+            "wp": "55",
             "rp": "60"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "65",
-            "rp": "70"
           }
         },
         "ERNAKULAM": {
@@ -3767,7 +3438,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "56",
+            "wp": "26",
             "rp": "60"
           }
         },
@@ -3787,7 +3458,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "56",
+            "wp": "55",
             "rp": "60"
           }
         },
@@ -3797,7 +3468,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "577",
+            "wp": "57",
             "rp": "60"
           }
         },
@@ -3807,7 +3478,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "58",
+            "wp": "55",
             "rp": "65"
           }
         },
@@ -3832,7 +3503,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "onion__small_": {
       "name": "Onion (small)",
@@ -3857,24 +3528,14 @@
             "rp": "90"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "90",
-            "rp": "100"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "90",
-            "rp": "95"
+            "wp": "92",
+            "rp": "97"
           }
         },
         "KOTTAYAM": {
@@ -3903,7 +3564,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "92",
+            "wp": "90",
             "rp": "100"
           }
         },
@@ -3948,7 +3609,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "pineapple__maurituis_": {
       "name": "Pineapple (Maurituis)",
@@ -3969,15 +3630,15 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "pineapple__maurituis__ripe": {
       "name": "Pineapple (Maurituis) ripe",
       "data": {
         "ALAPUZHA": {
           "KERALA": {
-            "wp": "80",
-            "rp": "88"
+            "wp": "78",
+            "rp": "86"
           },
           "OUT_OF_STATE": {
             "wp": "0",
@@ -3986,17 +3647,7 @@
         },
         "ALUVA": {
           "KERALA": {
-            "wp": "65",
-            "rp": "70"
-          },
-          "OUT_OF_STATE": {
-            "wp": "0",
-            "rp": "0"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "72",
+            "wp": "68",
             "rp": "75"
           },
           "OUT_OF_STATE": {
@@ -4008,16 +3659,6 @@
           "KERALA": {
             "wp": "64",
             "rp": "74"
-          },
-          "OUT_OF_STATE": {
-            "wp": "0",
-            "rp": "0"
-          }
-        },
-        "MANJERI": {
-          "KERALA": {
-            "wp": "65",
-            "rp": "75"
           },
           "OUT_OF_STATE": {
             "wp": "0",
@@ -4036,8 +3677,8 @@
         },
         "PERUMBAVOOR": {
           "KERALA": {
-            "wp": "66",
-            "rp": "70"
+            "wp": "70",
+            "rp": "75"
           },
           "OUT_OF_STATE": {
             "wp": "0",
@@ -4046,8 +3687,8 @@
         },
         "THALASSERY": {
           "KERALA": {
-            "wp": "80",
-            "rp": "90"
+            "wp": "75",
+            "rp": "85"
           },
           "OUT_OF_STATE": {
             "wp": "0",
@@ -4066,7 +3707,7 @@
         },
         "VAZHAKULAM": {
           "KERALA": {
-            "wp": "58",
+            "wp": "59",
             "rp": "0"
           },
           "OUT_OF_STATE": {
@@ -4075,7 +3716,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "potato": {
       "name": "Potato",
@@ -4100,24 +3741,14 @@
             "rp": "40"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "30",
-            "rp": "35"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "33",
-            "rp": "40"
+            "wp": "32",
+            "rp": "38"
           }
         },
         "KOTTAYAM": {
@@ -4146,8 +3777,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "40",
-            "rp": "45"
+            "wp": "42",
+            "rp": "50"
           }
         },
         "PERUMBAVOOR": {
@@ -4179,19 +3810,9 @@
             "wp": "30",
             "rp": "40"
           }
-        },
-        "THRISSUR": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "30",
-            "rp": "40"
-          }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "pumpkin": {
       "name": "Pumpkin",
@@ -4202,8 +3823,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "22",
-            "rp": "28"
+            "wp": "20",
+            "rp": "26"
           }
         },
         "ALUVA": {
@@ -4214,16 +3835,6 @@
           "OUT_OF_STATE": {
             "wp": "13",
             "rp": "30"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "15",
-            "rp": "20"
           }
         },
         "ERNAKULAM": {
@@ -4262,7 +3873,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "12",
+            "wp": "15",
             "rp": "20"
           }
         },
@@ -4298,16 +3909,16 @@
         },
         "THRISSUR": {
           "KERALA": {
-            "wp": "18",
-            "rp": "25"
-          },
-          "OUT_OF_STATE": {
             "wp": "0",
             "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "18",
+            "rp": "25"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "radish_red": {
       "name": "Radish Red",
@@ -4322,24 +3933,14 @@
     "ridge_gourd": {
       "name": "Ridge Gourd",
       "data": {
-        "ALAPUZHA": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "55",
-            "rp": "63"
-          }
-        },
         "ALUVA": {
           "KERALA": {
             "wp": "0",
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "38",
-            "rp": "50"
+            "wp": "40",
+            "rp": "60"
           }
         },
         "ERNAKULAM": {
@@ -4348,14 +3949,14 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "47",
-            "rp": "52"
+            "wp": "48",
+            "rp": "55"
           }
         },
         "PALAKKAD": {
           "KERALA": {
-            "wp": "25",
-            "rp": "30"
+            "wp": "30",
+            "rp": "40"
           },
           "OUT_OF_STATE": {
             "wp": "0",
@@ -4369,7 +3970,7 @@
           },
           "OUT_OF_STATE": {
             "wp": "50",
-            "rp": "60"
+            "rp": "55"
           }
         },
         "THALASSERY": {
@@ -4403,7 +4004,7 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "snake_gourd": {
       "name": "Snake Gourd",
@@ -4420,22 +4021,12 @@
         },
         "ALUVA": {
           "KERALA": {
-            "wp": "0",
-            "rp": "0"
+            "wp": "25",
+            "rp": "40"
           },
           "OUT_OF_STATE": {
             "wp": "25",
             "rp": "40"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "35",
-            "rp": "40"
-          },
-          "OUT_OF_STATE": {
-            "wp": "30",
-            "rp": "35"
           }
         },
         "ERNAKULAM": {
@@ -4450,12 +4041,12 @@
         },
         "KOTTAYAM": {
           "KERALA": {
-            "wp": "30",
-            "rp": "40"
+            "wp": "35",
+            "rp": "45"
           },
           "OUT_OF_STATE": {
-            "wp": "28",
-            "rp": "38"
+            "wp": "32",
+            "rp": "42"
           }
         },
         "MANJERI": {
@@ -4484,7 +4075,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "34",
+            "wp": "36",
             "rp": "45"
           }
         },
@@ -4494,8 +4085,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "36",
-            "rp": "42"
+            "wp": "34",
+            "rp": "40"
           }
         },
         "THODUPUZHA": {
@@ -4519,23 +4110,12 @@
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "sweet_potato": {
       "name": "Sweet Potato",
-      "data": {
-        "PERUMBAVOOR": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
-            "wp": "54",
-            "rp": "60"
-          }
-        }
-      },
-      "lastUpdated": "September 10, 2026"
+      "data": {},
+      "lastUpdated": null
     },
     "tapioca": {
       "name": "Tapioca",
@@ -4560,19 +4140,9 @@
             "rp": "0"
           }
         },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "40",
-            "rp": "45"
-          },
-          "OUT_OF_STATE": {
-            "wp": "0",
-            "rp": "0"
-          }
-        },
         "ERNAKULAM": {
           "KERALA": {
-            "wp": "32",
+            "wp": "30",
             "rp": "34"
           },
           "OUT_OF_STATE": {
@@ -4636,12 +4206,12 @@
             "rp": "30"
           },
           "OUT_OF_STATE": {
-            "wp": "24",
+            "wp": "23",
             "rp": "35"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "tomato": {
       "name": "Tomato",
@@ -4662,18 +4232,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "28",
-            "rp": "40"
-          }
-        },
-        "CHALAI": {
-          "KERALA": {
-            "wp": "0",
-            "rp": "0"
-          },
-          "OUT_OF_STATE": {
             "wp": "25",
-            "rp": "30"
+            "rp": "40"
           }
         },
         "ERNAKULAM": {
@@ -4682,8 +4242,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "35",
-            "rp": "40"
+            "wp": "32",
+            "rp": "36"
           }
         },
         "KOTTAYAM": {
@@ -4712,8 +4272,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "26",
-            "rp": "28"
+            "wp": "22",
+            "rp": "26"
           }
         },
         "PERUMBAVOOR": {
@@ -4722,8 +4282,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "28",
-            "rp": "35"
+            "wp": "25",
+            "rp": "30"
           }
         },
         "THALASSERY": {
@@ -4742,8 +4302,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "25",
-            "rp": "35"
+            "wp": "30",
+            "rp": "40"
           }
         },
         "THRISSUR": {
@@ -4752,12 +4312,12 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "25",
-            "rp": "35"
+            "wp": "30",
+            "rp": "40"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     },
     "water_melon": {
       "name": "Water melon",
@@ -4783,8 +4343,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "56",
-            "rp": "62"
+            "wp": "58",
+            "rp": "65"
           }
         },
         "MANJERI": {
@@ -4803,7 +4363,7 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "50",
+            "wp": "52",
             "rp": "60"
           }
         },
@@ -4813,8 +4373,8 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "54",
-            "rp": "60"
+            "wp": "56",
+            "rp": "65"
           }
         },
         "THRISSUR": {
@@ -4823,13 +4383,13 @@
             "rp": "0"
           },
           "OUT_OF_STATE": {
-            "wp": "55",
-            "rp": "65"
+            "wp": "60",
+            "rp": "70"
           }
         }
       },
-      "lastUpdated": "September 10, 2026"
+      "lastUpdated": "September 11, 2026"
     }
   },
-  "date": "September 10, 2026"
+  "date": "September 11, 2026"
 }
