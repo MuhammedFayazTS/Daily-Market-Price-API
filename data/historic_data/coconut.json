@@ -4232,6 +4232,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "September 24, 2026",
+      "prices": [
+        {
+          "place": "ALAPUZHA",
+          "KERALA": {
+            "wp": "57",
+            "rp": "65"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
