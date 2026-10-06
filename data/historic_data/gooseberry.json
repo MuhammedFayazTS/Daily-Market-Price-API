@@ -8198,6 +8198,44 @@
           }
         }
       ]
+    },
+    {
+      "date": "October 6, 2026",
+      "prices": [
+        {
+          "place": "KOTTAYAM",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "50",
+            "rp": "60"
+          }
+        },
+        {
+          "place": "PERUMBAVOOR",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "70",
+            "rp": "80"
+          }
+        },
+        {
+          "place": "THRISSUR",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "80",
+            "rp": "90"
+          }
+        }
+      ]
     }
   ]
 }

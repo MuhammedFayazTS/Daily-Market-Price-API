@@ -21541,6 +21541,110 @@
           }
         }
       ]
+    },
+    {
+      "date": "October 6, 2026",
+      "prices": [
+        {
+          "place": "ALAPUZHA",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "75",
+            "rp": "85"
+          }
+        },
+        {
+          "place": "ALUVA",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "80",
+            "rp": "82"
+          }
+        },
+        {
+          "place": "ERNAKULAM",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "85",
+            "rp": "90"
+          }
+        },
+        {
+          "place": "KOTTAYAM",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "84",
+            "rp": "94"
+          }
+        },
+        {
+          "place": "MANJERI",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "75",
+            "rp": "85"
+          }
+        },
+        {
+          "place": "PALAKKAD",
+          "KERALA": {
+            "wp": "60",
+            "rp": "70"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        },
+        {
+          "place": "PERUMBAVOOR",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "74",
+            "rp": "80"
+          }
+        },
+        {
+          "place": "THALASSERY",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "74",
+            "rp": "84"
+          }
+        },
+        {
+          "place": "THRISSUR",
+          "KERALA": {
+            "wp": "65",
+            "rp": "75"
+          },
+          "OUT_OF_STATE": {
+            "wp": "70",
+            "rp": "80"
+          }
+        }
+      ]
     }
   ]
 }

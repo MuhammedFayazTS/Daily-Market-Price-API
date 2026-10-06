@@ -12048,6 +12048,66 @@
           }
         }
       ]
+    },
+    {
+      "date": "October 6, 2026",
+      "prices": [
+        {
+          "place": "ERNAKULAM",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "108",
+            "rp": "112"
+          }
+        },
+        {
+          "place": "MANJERI",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "60",
+            "rp": "70"
+          }
+        },
+        {
+          "place": "PALAKKAD",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "80",
+            "rp": "90"
+          }
+        },
+        {
+          "place": "PERUMBAVOOR",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "68",
+            "rp": "72"
+          }
+        },
+        {
+          "place": "THRISSUR",
+          "KERALA": {
+            "wp": "0",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "70",
+            "rp": "80"
+          }
+        }
+      ]
     }
   ]
 }
