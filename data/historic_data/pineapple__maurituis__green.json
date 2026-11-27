@@ -3297,6 +3297,22 @@
           }
         }
       ]
+    },
+    {
+      "date": "November 27, 2026",
+      "prices": [
+        {
+          "place": "VAZHAKULAM",
+          "KERALA": {
+            "wp": "29",
+            "rp": "0"
+          },
+          "OUT_OF_STATE": {
+            "wp": "0",
+            "rp": "0"
+          }
+        }
+      ]
     }
   ]
 }
